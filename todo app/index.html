@@ -26,7 +26,19 @@
 </head>
 
 <body>
+    <div id="app">
+        <div class="container my-5">
+            <h1>Todo List</h1>
+            <ul class="list-group">
+                <li v-for="task in tasks" :key="task" class="list-group-item">{{task.text}}</li>
+            </ul>
 
+            <div class="input-group my-3">
+                <input type="text" class="form-control" placeholder="Aggiungi task">
+                <button type="button" class="btn btn-outline-info">Add</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
